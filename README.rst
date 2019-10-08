@@ -38,6 +38,10 @@ To install ckanext-spc:
    config file (by default the config file is located at
    ``/etc/ckan/default/production.ini``).
 
+4. For the SpcNadaHarvester to work, install this branch of ckanext-ddi: ``github.com/roly97/ckanext-ddi/tree/nada_harvester``.
+   Alternatively, install the original ckanext-ddi extension ``github.com/liip/ckanext-ddi`` and then replace the files ``ddiharvester.py`` and ``metadata.py`` 
+   with the changed files found in ``ckanext-ddi_changes`` directory in this repo. 
+
 4. Update SOLR schema::
 
      <field name="topic" type="string" indexed="true" stored="true" multiValued="true"/>
